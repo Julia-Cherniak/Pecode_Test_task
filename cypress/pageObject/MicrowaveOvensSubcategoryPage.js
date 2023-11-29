@@ -33,7 +33,7 @@ class MicrowaveOvensSubcategoryPage {
 
   clickConfirmFilterBtn() {
     this.getConfirmFilterBtn().click();
-    cy.wait(6000);
+    cy.wait(4000);
     return this;
   }
 

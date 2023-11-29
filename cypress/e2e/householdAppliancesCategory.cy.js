@@ -21,12 +21,12 @@ describe("householdAppliancesCategory", () => {
       .clickProducerSumsungFilter()
       .clickConfirmFilterBtn()
       .getMicrowaveOvensPrice()
-      .then(($els) => {
-        let actualPrice = Cypress.$.makeArray($els)
-          .map(($el) => $el.innerText)
-          .map((el) => +el.replace(/\s/g, ""));
-        let expectedPrice = actualPrice.slice().sort((a, b) => a - b);
-        expect(actualPrice).to.deep.equal(expectedPrice);
+      .each(($price) => {
+        cy.wrap($price).invoke('text').then((priceText) => {
+          const priceValue = parseInt(priceText.replace(/[^\d]/g, ''));
+          cy.wrap(priceValue).should('be.gte', microwaveOvensSubcategoryData.fromPrice);
+          cy.wrap(priceValue).should('be.lte', microwaveOvensSubcategoryData.toPrice);
+        });
       });
   });
 });

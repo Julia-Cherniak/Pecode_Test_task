@@ -1,0 +1,16 @@
+{
+  "name": "pecode_test_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "test:run:chrome": "npx cypress run --spec 'cypress/e2e/*' --browser chrome"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.0",
+    "cypress-mochawesome-reporter": "^3.7.0"
+  }
+}

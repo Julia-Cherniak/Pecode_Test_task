@@ -1,0 +1,43 @@
+{
+    "itemForSearch": "Лялька L.O.L",
+    "categoriesList": [
+        "Тримай заряд",
+        "Смартфони та телефони",
+        "Телевізори та мультимедіа",
+        "Побутова техніка",
+        "Ноутбуки, ПК та планшети",
+        "Apple",
+        "Xiaomi",
+        "Гаджети та електротранспорт",
+        "Аудіо",
+        "Спорт і здоров'я",
+        "Туризм та риболовля",
+        "Ремонт та обладнання",
+        "Дача, дім та сад",
+        "Товари для дітей",
+        "Авто і мототовари",
+        "Одяг, взуття та аксесуари",
+        "Парфуми, догляд, прикраси",
+        "Акції"
+      ],
+      "endPointUrl": [
+        "al-ternativnye-istochniki-jenergii/",
+        "mobilnye-telefony-i-sredstva-svyazi/",
+        "televizory-i-mediapleery/",
+        "bytovaya-tehnika/",
+        "planshety-i-gadzhety/",
+        "apple-store/",
+        "xiaomi-store/",
+        "gadzhety/",
+        "naushniki-i-akustika/",
+        "sport-i-zdorov-e/",
+        "turizm-i-rybalka/",
+        "santehnika-i-remont/",
+        "dom-sad-remont/",
+        "tovary-dlja-detej/",
+        "avtotovary/",
+        "odezhda/",
+        "chasy-i-ukrashenija/",
+        "events-and-discounts/"
+      ]
+}

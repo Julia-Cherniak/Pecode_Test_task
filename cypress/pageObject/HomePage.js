@@ -8,6 +8,8 @@ class HomePage {
   getAppleCategoryLink = () => cy.get('#js-menu-wrapper [href$="apple-store/"]');
 
   clickHouseholdAppliancesCategoryLink() {
+    cy.intercept('POST', 'https://ams.creativecdn.com/tags/v2?type=json').as('pageLoading');
+    cy.wait('@pageLoading');
     this.getHouseholdAppliancesCategoryLink().click();
     return new HouseholdAppliancesCategoryPage();
   }

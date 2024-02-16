@@ -34,5 +34,5 @@ Cypress.Commands.add('login', (email, password) => {
         .typeEmailField(email)
         .typePasswordField(password)
         .clickSubmitBtn()
-        cy.wait(2000);
+        //cy.wait(2000);
 });
